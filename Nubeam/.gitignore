@@ -1,0 +1,20 @@
+_STORE
+node_modules
+bower_components
+*~
+static/dist/
+.DS_STORE
+*.swp
+*.log*
+.idea
+*.iml
+dist/
+.npm
+.env
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+

@@ -46,10 +46,10 @@ function drawMap() {
             .range(d3.range(9).map(function(i) { return "p" + i; }));
 
     queue()
-            .defer(d3.json, "./resources/municipalities-topo-simple.json")
+            .defer(d3.json, "static/resources/municipalities-topo-simple.json")
             //.defer(d3.json, "./resources/kor_map_simple_topo2.json")
             //.defer(d3.json, 'http://128.199.128.104:3001/nabi')
-            .defer(d3.json, "./resources/nabi.json")
+            .defer(d3.json, "static/resources/nabi.json")
             .await(ready);
 
     function ready(error, kor, powerData) {
